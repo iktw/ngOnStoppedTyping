@@ -1,0 +1,25 @@
+{
+  "name": "ng-on-stopped-typing",
+  "version": "1.0.0",
+  "authors": [
+    "Mohammed Hammoud"
+  ],
+  "description": "Directive that runs desired method when user has stopped typing inside of an input.",
+  "main": "ng-on-stopped-typing.min.js",
+  "keywords": [
+    "angular",
+    "directive",
+    "onStoppedTyping",
+    "events"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/iktw/ngOnStoppedTyping",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
