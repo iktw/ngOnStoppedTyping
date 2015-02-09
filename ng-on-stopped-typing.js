@@ -9,7 +9,7 @@ angular.module('ngOnStoppedTyping', [])
                 typingTimer = setTimeout(function () {
                     var expressionHandler = $parse(attrs.onStoppedTyping);
                     expressionHandler($scope);
-                }, 800);
+                }, waitForTimer);
             }
         });
     };
