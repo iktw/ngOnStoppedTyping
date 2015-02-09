@@ -7,7 +7,6 @@ angular.module('ngOnStoppedTyping', [])
                 var waitForTimer = attrs.waitFor ? attrs.waitFor : 500;
                 clearTimeout(typingTimer);
                 typingTimer = setTimeout(function () {
-                    console.log(waitForTimer)
                     var expressionHandler = $parse(attrs.onStoppedTyping);
                     expressionHandler($scope);
                 }, 800);
