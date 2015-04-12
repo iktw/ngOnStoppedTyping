@@ -3,7 +3,7 @@ angular.module('ngOnStoppedTyping', [])
     var linker = function ($scope, element, attrs) {
         var typingTimer;
         $scope.$watch(attrs.ngModel, function (newValue, oldValue) {
-            if (newValue !== oldValue) {
+            if (newValue !== oldValue && oldValue !== undefined) {
                 var waitForTimer = attrs.waitFor ? attrs.waitFor : 500;
                 clearTimeout(typingTimer);
                 typingTimer = setTimeout(function () {
